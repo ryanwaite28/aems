@@ -1,0 +1,147 @@
+/* New Style */
+
+.top-bar {
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid grey;
+  /*height: 56px;*/
+  background: transparent;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 1000;
+  -webkit-transition: transition 0.3s;
+  transition: 0.3s;
+}
+.top-bar:hover {
+  transition: 0.3s;
+  opacity: 1.0;
+}
+
+.top-text {
+  margin: 0px;
+  height: 56px;
+  line-height: 56px;
+  vertical-align: middle;
+  width: 100%;
+  position: absolute;
+  /*z-index: 1;*/
+  display: inline;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.page-links, .social-links {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+
+  z-index: 1;
+}
+
+.page-links li, .social-links li {
+  display: inline-block;
+  z-index: 1;
+}
+
+.page-links {
+  float: left;
+  width: 350px;
+}
+.page-links li  {
+  line-height: 56px;
+  position: relative;
+  vertical-align: middle;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.page-links li a {
+  font-weight: bold;
+}
+
+.social-links {
+  float: right;
+}
+.social-links li {
+  margin: 13px 15px 13px 15px;
+}
+
+.sdq-list {
+  position: relative;
+  display: inline-block;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.sdq-menu {
+  position: absolute;
+  display: none;
+  top: 56px;
+  width: 200px;
+  background-color: black;
+  border: 2px solid grey;
+}
+.sdq-menu p {
+  -webkit-transition: transition 0.3s;
+  transition: 0.3s;
+}
+.sdq-menu p:hover {
+  background-color: white;
+  transition: 0.3s;
+}
+
+.sqd-list:hover div {
+  display: block;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* --- */
+
+#grand-container {
+  background-image: url('http://www.gold-faces.com/wp-content/uploads/2015/11/website-background-patterns-2-free-desktop-background-and-wallpaper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  overflow-y: scroll;
+}
+#grand-container::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  width: 80%;
+  margin-top: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.item {
+  height: 70vh;
+}
+.item img {
+  width: 100%;
+}
+.carousel-caption {
+  background-color: black;
+  opacity: 0.7;
+}
+
+#menu-icon {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 54px;
+  width: 54px;
+  border-left: 2px solid grey;
+}
+
+.inverted {
+  transition: -webkit-filter 1s, filter 1s;
+  -webkit-filter: invert(100%);
+}
